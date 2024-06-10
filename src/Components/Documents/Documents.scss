@@ -1,0 +1,126 @@
+body {
+  background-color: #0a482d7f;
+  background-repeat: no-repeat;
+}
+.main_science {
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 3px;
+
+  input[type="text"] {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+
+    &:focus {
+      border-color: #141b15;
+      box-shadow: 0 0 8px rgba(19, 21, 19, 0.4);
+      outline: none;
+    }
+  }
+
+  .title-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    .actions {
+      display: flex;
+      margin-left: -60px;
+      button {
+        margin-left: 10px;
+        text-align: center;
+        font-weight: bold;
+        border-radius: 4px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .actions_pht {
+        font-size: 14px;
+        width: 36px;
+        height: 36px;
+      }
+    }
+  }
+  .title-bar::before {
+    content: "";
+    display: block;
+  }
+
+  .title-bar h2 {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+    font-size: 40px;
+    margin-right: 200px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-family: "Forum", serif;
+    font-weight: normal;
+    font-family: "Forum", serif;
+
+    li {
+      padding: 10px 0;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #f5f5f5;
+      }
+
+      span {
+        color: #333;
+        transition: color 0.3s ease;
+        font-family: "Forum", serif;
+
+        &:hover {
+          color: #0d0d0d;
+        }
+      }
+
+      .view-document,
+      .download-document {
+        margin-right: 15px;
+        cursor: pointer;
+        text-decoration: none;
+        font-weight: bold;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .download-document {
+        color: #161717;
+      }
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}

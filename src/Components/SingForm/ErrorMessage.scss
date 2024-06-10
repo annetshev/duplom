@@ -1,0 +1,15 @@
+.error-message-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffcccc;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.error-message {
+  margin: 0;
+  color: red;
+}
